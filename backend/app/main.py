@@ -57,19 +57,3 @@ def get_customers(db: Session = Depends(get_db)):
         }
         for c in customers
     ]
-
-
-# @app.get("/data")
-# async def get_users_data():
-#     """
-#     Load customer data.
-
-#     Returns
-#     -------
-#     dict
-#         Return JSON data structure.
-#     """
-#     df = pd.read_csv("data/customers-100.csv")
-
-#     # return a json as the frontend will read it and display it
-#     return df.to_dict(orient="records")
