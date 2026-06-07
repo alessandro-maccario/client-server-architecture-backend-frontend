@@ -5,8 +5,6 @@ from sqlalchemy import select
 
 from app.db import SessionLocal
 from app.models.customer import Customer
-import pandas as pd
-import os
 
 
 app = FastAPI()
